@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A minimal full-duplex .wave voice tutorial." />
+    <title>Talk to Nemotron VoiceChat · .wave tutorial</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">.wave tutorial 01</p>
+      <h1>Talk to Nemotron VoiceChat</h1>
+      <p class="intro">
+        Your microphone is streamed as 24 kHz PCM audio. Responses are played as they arrive,
+        so you can talk naturally and interrupt the model.
+      </p>
+
+      <section class="controls" aria-label="Conversation controls">
+        <button id="conversation-button" type="button">Start conversation</button>
+        <p id="status" role="status">Ready</p>
+      </section>
+
+      <section class="transcripts" aria-label="Live transcript">
+        <article>
+          <h2>You</h2>
+          <p id="user-transcript" class="transcript">—</p>
+        </article>
+        <article>
+          <h2>Assistant</h2>
+          <p id="assistant-transcript" class="transcript">—</p>
+        </article>
+      </section>
+
+      <details>
+        <summary>Latest turn event</summary>
+        <pre id="turn-event">No turn event yet.</pre>
+      </details>
+
+      <p class="note">Use headphones for the cleanest interruption test.</p>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

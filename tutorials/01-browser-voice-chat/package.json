@@ -1,0 +1,15 @@
+{
+  "name": "dotwave-tutorial-01-browser-voice-chat",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Talk to Nemotron VoiceChat through the .wave API from a browser.",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.mjs",
+    "check": "node --check server.mjs && node --check public/app.js && node --check public/pcm-worklet.js"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "license": "MIT"
+}
